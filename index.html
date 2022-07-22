@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Weather App</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand navbar-light bg-info">
+        <div class="nav navbar-nav">
+            <a class="nav-item nav-link active" href="#">Weather Stuff <span
+                    class="visually-hidden">(current)</span></a>
+            <a class="nav-item nav-link" href="#">Home</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <form class="my-3" id="searchForm">
+            <div class="my-3">
+                <label for="cityInput" class="form-label">City</label>
+                <input type="text" class="form-control" name="cityInput" id="cityInput">
+                <small id="helpId" class="form-text text-muted">Enter city name</small>
+            </div>
+            <button type="submit" class="btn btn-info">Get Weather</button>
+        </form>
+
+            <div class="card text-bg-light mb-3" id="tempCard">
+                <div class="card-body">
+                    <h4 class="card-title">Current Temp</h4>
+                    <p class="card-text" id="temp">Temp</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item" id="feelsLike">Feels like: </li>
+                        <li class="list-group-item" id="high">High: </li>
+                        <li class="list-group-item" id="low">Low: </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card text-bg-dark mb-3" id="forecastCard">
+                <div class="card-body ">
+                    <h4 class="card-title">Forecast</h4>
+                    <p class="card-text">weather.main</p>
+                    <ul class="list-group list-group-flush ">
+                        <li class="list-group-item text-bg-dark">Description: </li>
+                        <li class="list-group-item text-bg-dark">Humidity: </li>
+                        <li class="list-group-item text-bg-dark">Pressure: </li>
+                        <li class="list-group-item text-bg-dark">Visibility: </li>
+                        <li class="list-group-item text-bg-dark">Wind Speed: </li>
+                    </ul>
+                </div>
+            </div>
+    </main>
+
+
+
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
